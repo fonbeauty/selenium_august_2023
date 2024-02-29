@@ -1,0 +1,12 @@
+Что такое Selenium
+Selenium WebDriver — инструмент для автоматизации действий веб-браузера
+
+                                                    Chromedriver                    Chrome
+(C#, Ruby, Python, JS, Java) -> HTTP request    ->  Geckodriver     ->  вжух    ->  Firefox
+Selenium                                            Safari webdriver                Safari
+                                                    Opera WebDriver                 Opera
+
+https://selenium.dev/
+https://www.w3.org/TR/webdriver1/
+
+curl POST --location "http://localhost:9515/session" --header "Content-Type: application/json" --data '{"capabilities": {"browserName": "chrome"}}'
