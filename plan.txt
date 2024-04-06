@@ -1,5 +1,8 @@
 Что такое Selenium
 Selenium WebDriver — инструмент для автоматизации действий веб-браузера
+Имитирует действия пользователя
+WebDriver + библиотека + Стандарт
+Webdriver for Safari
 
                                                     Chromedriver                    Chrome
 (C#, Ruby, Python, JS, Java) -> HTTP request    ->  Geckodriver     ->  вжух    ->  Firefox
@@ -9,4 +12,36 @@ Selenium                                            Safari webdriver            
 https://selenium.dev/
 https://www.w3.org/TR/webdriver1/
 
-curl POST --location "http://localhost:9515/session" --header "Content-Type: application/json" --data '{"capabilities": {"browserName": "chrome"}}'
+curl http://localhost:9515/status
+curl http://localhost:9515/session -d "{\"capabilities\": {\"browserName\": \"chrome\"}}" -H "Content-Type: application/json"
+
+
+
+Часть 2
+Первые шаги
+Делаем тест
+
+Часть 3
+Поиск элементов локатор/селектор Про CSS и XPATH
+find_element / find_elements
+готовые селекторы из браузера
+By константа
+find_elemnt_by_...
+
+Явные explicit ожидания и sleep
+
+
+Часть 4
+неявные implicit ожидания
+
+Часть 5 WebElement
+
+tag_name, parent, get_attribute, get_property('attributes'), value_of_css_property('color')
+click()
+input.send_keys, Keys
+submit
+size, location, rect
+screenshot
+find_element
+is_displayed, is_enabled, is_selected
+
